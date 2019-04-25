@@ -1,0 +1,19 @@
+ var allTrukks = [
+     { 
+    'placa': 123, 
+    'capacity': 10, 
+    'idBrand': 1, 
+    'model': "Open-topped", 
+    'color': "red", 
+    'movement': 12, 
+    'petrol': "hybrid", 
+    'transmission': 
+    "automatic", 
+    'year': 369.M40, 
+    'extras': "shoota", 
+    'ppd':70, 
+    'status': "Available"
+    }
+ ];
+
+db.Trukks.insertMany(allTrukks)

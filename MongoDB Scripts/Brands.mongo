@@ -1,0 +1,7 @@
+db.Brands.insertOne({'_id': 1, 'brandName': "Bad Moons"})
+db.Brands.insertOne({'_id': 2, 'brandName': "Evil Sunz"})
+db.Brands.insertOne({'_id': 3, 'brandName': "Goffs"})
+db.Brands.insertOne({'_id': 4, 'brandName': "Deathskulls"})
+db.Brands.insertOne({'_id': 5, 'brandName': "Blood Axes"})
+db.Brands.insertOne({'_id': 6, 'brandName': "Snakebites"})
+db.Brands.insertOne({'_id': 7, 'brandName': "Freebooterz"})
