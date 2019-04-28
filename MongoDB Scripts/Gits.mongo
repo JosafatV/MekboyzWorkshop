@@ -1,18 +1,18 @@
 db.Gits.insertOne({
   'cedula': 1,
-  'nombre': "Wazdakka Gutsmek"
-  'email': "wazfreak@esunz.com"
+  'nombre': "Wazdakka Gutsmek",
+  'email': "wazfreak@esunz.com",
   'telefono': "12345"
   });
 db.Gits.insertOne({
   'cedula': 2,
-  'nombre': "Gobwrench Wib"
-  'email': "gobww@sandw.com"
+  'nombre': "Gobwrench Wib",
+  'email': "gobww@sandw.com",
   'telefono': "54321"
   });
 db.Gits.insertOne({
   'cedula': 3,
-  'nombre': "Rokstik Ironstitch"
-  'email': "rokki99@baxe.com"
+  'nombre': "Rokstik Ironstitch",
+  'email': "rokki99@baxe.com",
   'telefono': "21345"
   });

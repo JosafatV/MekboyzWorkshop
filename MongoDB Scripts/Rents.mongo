@@ -1,18 +1,18 @@
 db.Rents.insertOne({
   'placa': 1110,
-  'cedula': "1"
-  'diasRentado': "10"
+  'cedula': "1",
+  'diasRentado': "10",
   'monto': "700"
   });
 db.Rents.insertOne({
   'placa': 1200,
-  'cedula': "1"
-  'diasRentado': "2"
+  'cedula': "1",
+  'diasRentado': "2",
   'monto': "140"
   });
 db.Rents.insertOne({
   'placa': 1202,
-  'cedula': "2"
-  'diasRentado': "5"
+  'cedula': "2",
+  'diasRentado': "5",
   'monto': "400"
   });
