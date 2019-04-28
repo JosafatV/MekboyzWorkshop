@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Dr.Phischel</title>
+  <title>Mekboy'z Workshop</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -19,28 +19,55 @@
       </div>
       <!--Inicia Header-->
       <div class="collapse navbar-collapse" id="navegacion-fp">
-        <ul class="nav navbar-nav">
-          <li> <a href="index.html"> <img = "imagenes/skull.png"> </a> </li>
-          <li class="active"><h3> Rents and Lends <h3></li>
+        <table class="nav navbar-nav">
+        <th>  <a href="index.html"> <img = "imagenes/skull.png" width = 50, height = 50> </a> </th>
+        <th>  <h3> Rents <h3> </th>
+        </table>
       </div>
     </nav>
     <!--Inicia Menu-->
     <div class="collapse navbar-collapse" id="navegacion-fp">
       <ul class="nav navbar-nav">
         <li><a href="vistaBrands.html"> Brands </a></li>
-        <li><a href="vistaGits.html"> Gits </a></li>
+        <li><a href="vistaGits.html"> Clients </a></li>
         <li><a href="vistaRents.html"> Rents </a></li>
-        <li><a href="vistaTrukks.html"> Trukks </a></li>
+        <li><a href="vistaTrukks.html"> Vehicles </a></li>
         <li><a href="vistaReports.html"> Reports </a></li>
       </ul>
     </div>
-<br><br>
 
-Search bar: Search license plate<br><br><br><br>
-Contenido: Table with TRUKKS<br>
+<!--Search menu-->
+  <br><br>
+  <div>
+    Search bar: Search license plate or id or date
+  </div>
+
+<!--Content table-->
+<br><br><br>
+<div>
+  Contenido: Table with Rents <br>
+  <table id=content >
+    <td>
+      <ti> License plate
+      </ti>
+      <ti> Renter Id
+      </ti>
+      <ti> Rented Days
+      </ti>
+      <ti> Total
+      </ti>
+    </td>
+  </table>
+<br><br>
+  <div class="form-group">
+    <button data-ng-click="addClient()" class="btn btn-success"> Add Client </button>
+    <button data-ng-click="refresh()" class="btn btn-primary"> Update </button>
+    <button data-ng-click="back()" class="btn btn-default"> Return </button>
+  </div>
+
+  </div>
 
 <br><br><br><br>
-
 
   <footer>
     <div class="container">
@@ -53,9 +80,9 @@ Contenido: Table with TRUKKS<br>
 <div>
         <div class="col-xs-6">
           <ul class="list-inline text-right">
-            <li><a href="#">Reclutamiento</a></li>
-            <li><a href="#">Terminos & Condiciones</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Recruitment</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">FAQ</a></li>
           </ul>
         </div>
       </div>
