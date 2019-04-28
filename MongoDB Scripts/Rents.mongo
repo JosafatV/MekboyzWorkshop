@@ -1,7 +1,18 @@
-db.Brands.insertOne({'_id': 1, 'brandName': "Bad Moons"})
-db.Brands.insertOne({'_id': 2, 'brandName': "Evil Sunz"})
-db.Brands.insertOne({'_id': 3, 'brandName': "Goffs"})
-db.Brands.insertOne({'_id': 4, 'brandName': "Deathskulls"})
-db.Brands.insertOne({'_id': 5, 'brandName': "Blood Axes"})
-db.Brands.insertOne({'_id': 6, 'brandName': "Snakebites"})
-db.Brands.insertOne({'_id': 7, 'brandName': "Freebooterz"})
+db.Rents.insertOne({
+  'placa': 1110,
+  'cedula': "1"
+  'diasRentado': "10"
+  'monto': "700"
+  });
+db.Rents.insertOne({
+  'placa': 1200,
+  'cedula': "1"
+  'diasRentado': "2"
+  'monto': "140"
+  });
+db.Rents.insertOne({
+  'placa': 1202,
+  'cedula': "2"
+  'diasRentado': "5"
+  'monto': "400"
+  });

@@ -1,19 +1,84 @@
- var allTrukks = [
-     { 
-    'placa': 123, 
-    'capacity': 10, 
-    'idBrand': 1, 
-    'model': "Open-topped", 
-    'color': "red", 
-    'movement': 12, 
-    'petrol': "hybrid", 
-    'transmission': 
-    "automatic", 
-    'year': 369.M40, 
-    'extras': "shoota", 
-    'ppd':70, 
+db.Trukks.insertOne({
+    'placa': 1110,
+    'capacity': 10,
+    'idBrand': 2,
+    'model': "Open-topped",
+    'color': "red",
+    'movement': 12,
+    'petrol': "diesel",
+    'transmission': "automatic",
+    'year': 41396,
+    'extras': "big shoota",
+    'ppd':70,
+    'status': "Rented"
+    })
+db.Trukks.insertOne({
+    'placa': 1101,
+    'capacity': 1,
+    'idBrand': 1,
+    'model': "scrapjet",
+    'color': "yellow",
+    'movement': 10,
+    'petrol': "jet fuel",
+    'transmission': "automatic",
+    'year': 41469,
+    'extras': "grot gunner",
+    'ppd':120,
     'status': "Available"
-    }
- ];
-
-db.Trukks.insertMany(allTrukks)
+    })
+db.Trukks.insertOne({
+    'placa': 1102,
+    'capacity': 3,
+    'idBrand': 4,
+    'model': "snazzwagon",
+    'color': "blue",
+    'movement': 12,
+    'petrol': "super",
+    'transmission': "manual",
+    'year': 41471,
+    'extras': "mek spehsul, big shoota",
+    'ppd':100,
+    'status': "Available"
+    })
+db.Trukks.insertOne({
+    'placa': 1200,
+    'capacity': 10,
+    'idBrand': 3,
+    'model': "Open-topped",
+    'color': "black",
+    'movement': 8,
+    'petrol': "diesel",
+    'transmission': "automatic",
+    'year': 41356,
+    'extras': "big shoota",
+    'ppd':70,
+    'status': "Rented"
+    })
+db.Trukks.insertOne({
+    'placa': 1201,
+    'capacity': 10,
+    'idBrand': 3,
+    'model': "Open-topped",
+    'color': "brown",
+    'movement': 8,
+    'petrol': "diesel",
+    'transmission': "manual",
+    'year': 41356,
+    'extras': "big shoota, grabbin klaw",
+    'ppd':75,
+    'status': "Available"
+    })
+db.Trukks.insertOne({
+    'placa': 1202,
+    'capacity': 10,
+    'idBrand': 3,
+    'model': "looted wagon",
+    'color': "brown",
+    'movement': 8,
+    'petrol': "regular",
+    'transmission': "manual",
+    'year': 41356,
+    'extras': "big shoota, kannon",
+    'ppd':80,
+    'status': "Rented"
+    })
