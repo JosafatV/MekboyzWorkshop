@@ -20,10 +20,13 @@ db.Trukks.find({"idBrand": 2},
 
 
 
+
 // Trukk in price per day (ppd) range
 db.Trukks.find({ $and: [ {"ppd": {$gt: 80}}, {"ppd":{$lt: 110}} ]}, 
     {"_id":0
 	 }).pretty();
+
+
 
 
 
@@ -41,6 +44,41 @@ db.Trukks.find({ $and: [ {"ppd": {$gt: 80}}, {"ppd":{$lt: 110}} ]},
         }).pretty();
 
 
+
+
+
+
+
 //how many vehicles
-db.Trukk.count({"placa": {$ne: 0}});
 db.Trukks.find({"placa": {$ne: 0}}).count();
+
+
+
+
+
+
+//lowest price vehicle
+db.Trukks.find({}, {"_id": 0}).sort({"ppd": 1}).limit(1).pretty();
+
+
+
+
+
+
+//highest price vehicle
+db.Trukks.find({}, {"_id": 0}).sort({"ppd": -1}).limit(1).pretty();
+
+
+
+
+
+
+
+//average price per brand
+db.Trukk.aggregate([
+    {$group : {
+        _id : "$idBrand",
+        avgPrice: {$avg: "$ppd"}
+        }
+    }
+   ])
