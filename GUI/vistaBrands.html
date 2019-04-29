@@ -35,25 +35,22 @@
         <li><a href="vistaReports.html"> Reports </a></li>
       </ul>
     </div>
-<br><br>
 
-MongoClient.connect("mongodb://localhost:27017/YourDB", { useNewUrlParser: true })
+
 <!--Content table-->
 <br><br><br>
 <alignment
 <div>
-  Contenido: Table with Rents <br>
-  <table id=content class="Content" style=”margin:1em auto;”>
+  <h2> Available brands </h2>
+  <table class="table table-striped table-bordered table-hover table-condensed">
     <tr>
-      <td> Brand Id
-      </td>
-      <td> Brand
-      </td>
-      <tr data-ng-repeat="item in data  | filter: search" data-ng-click="editClient($index)">
-        <td>{{item.BrandId}}</td>
-        <td>{{item.Brand}}</td>
-      </tr>
-    </td>
+      <th> Brand Id      </th>
+      <th> Brand      </th>
+    </tr>
+    <tr data-ng-repeat="item in data  | filter: search" data-ng-click="editClient($index)">
+      <th>{{item.idBrand}}</th>
+      <th>{{item.brandName}}</th>
+    </tr>
   </table>
   </div>
 

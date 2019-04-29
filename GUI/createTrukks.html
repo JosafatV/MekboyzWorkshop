@@ -85,10 +85,14 @@
           <input type="radio" name="opcion3" id="radioM">Rented
         </div>
         <br>
-          <a href="#"class="btn btn-success">Save Trukk</a>
         </div>
 
       </form>
+      <div class="button-group">
+      <button data-ng-click="saveTrukk()" class="btn btn-success"> Save trukk </button>
+      <button data-ng-click="delete()" class="btn btn-delete"> Delete </button>
+      <button class="btn btn-default" onclick="window.location.href = 'vistaTrukks.html';"> Return </button>
+      </div>
 
     </div>
 
