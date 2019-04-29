@@ -1,0 +1,46 @@
+// var searchPlaca = 1100
+db.Trukks.find({"placa": 1100},
+    {"_id":0
+    });
+
+
+
+
+
+// var searchBrand = "Goffs" to get index
+db.Brands.find({"brandName": "Evil Sunz"}, {brandName:0});
+
+//to get values
+db.Trukks.find({"idBrand": 2},
+    {"_id":0,    
+	"idBrand" : 0
+	 }).pretty();
+
+
+
+
+
+// Trukk in price per day (ppd) range
+db.Trukks.find({ $and: [ {"ppd": {$gt: 80}}, {"ppd":{$lt: 110}} ]}, 
+    {"_id":0
+	 }).pretty();
+
+
+
+
+// Project from chosen model
+    db.Trukks.find({"model": "Open-topped"},
+        {"_id": 0,
+        "placa": 0,
+        "capacity": 0,
+        "color": 0,
+        "petrol": 0,
+        "transmission": 0,
+        "extras": 0,
+        "status": 0
+        }).pretty();
+
+
+//how many vehicles
+db.Trukk.count({"placa": {$ne: 0}});
+db.Trukks.find({"placa": {$ne: 0}}).count();

@@ -37,19 +37,22 @@
     </div>
 <br><br>
 
-
+MongoClient.connect("mongodb://localhost:27017/YourDB", { useNewUrlParser: true })
 <!--Content table-->
 <br><br><br>
+<alignment
 <div>
   Contenido: Table with Rents <br>
-  <table id=content class="Content">
-    <td>
-      <ti> Brand Id
-      </ti>
-      <ti> Brand
-      </ti>
-    </td>
-    <td>
+  <table id=content class="Content" style=”margin:1em auto;”>
+    <tr>
+      <td> Brand Id
+      </td>
+      <td> Brand
+      </td>
+      <tr data-ng-repeat="item in data  | filter: search" data-ng-click="editClient($index)">
+        <td>{{item.BrandId}}</td>
+        <td>{{item.Brand}}</td>
+      </tr>
     </td>
   </table>
   </div>
