@@ -5,7 +5,14 @@ var config = require ('./config');
 var mongoose = require('mongoose');
 var app = express();
 
-mongoose.connect(config.database);
+mongoose.connect(config.database, { useNewUrlParser: true }, function(err) {
+  if(err) {
+    console.log(err)
+  } else {
+    console.log("Connected to database")
+  }
+});
+
 
 
 app.use(bodyParser.urlencoded({extended: true}));
