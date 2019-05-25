@@ -1,8 +1,8 @@
-﻿Instituto Tecnológico de Costa Rica
-Clase virtual de Bases de Datos Avanzadas.
-Josafat Vargas Gamboa
-2013030892
-I 2019
+﻿Instituto Tecnológico de Costa Rica <br/>
+Clase virtual de Bases de Datos Avanzadas <br/>
+Josafat Vargas Gamboa <br/>
+2013030892 <br/>
+I 2019 <br/>
 
 # Mekboy'z Workshop
 
