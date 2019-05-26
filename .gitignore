@@ -10,6 +10,9 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# node js server dependencies (npm files)
+node_modules/
+
 # Package Files #
 *.jar
 *.war
